@@ -1,0 +1,209 @@
+/* // Define variables context */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600;700&display=swap");
+
+:root {
+	/* // Font family -------------------------------------------------------- // */
+	--font-primary: "Montserrat", sans-serif;
+	--font-accent: "Open Sans", sans-serif;
+
+	/* // Tag - h1,h2,h3,h4,h5,h6 -------------------------------------------- // */
+	--font-heading-x1: 3.5rem;
+	--font-heading-x2: 3rem;
+	--font-heading-x3: 2.5rem;
+	--font-heading-x4: 2.25rem;
+	--font-heading-x5: 1.75rem;
+	--font-heading-x6: 1.25rem;
+
+	/* // Hierarchy from font ----------------------------------------------- // */
+	--font-subtitle: 1.25rem;
+	--font-label-lg: 1.25rem;
+	--font-label: 1rem;
+	--font-label-sm: 0.875rem;
+	--font-body-lg: 1.25rem;
+	--font-body: 1rem;
+	--font-body-sm: 0.875rem;
+	--font-caption: 0.75rem;
+	/* // Baseline ------------------------------------------------------ // */
+	--font-line-base: 1.5;
+	--font-baseline-heading-x1: 3.75rem;
+	--font-baseline-heading-x2: 3.25rem;
+	--font-baseline-heading-x3: 2.575rem;
+	--font-baseline-heading-x4: 2.75rem;
+	--font-baseline-heading-x5: 2.25rem;
+	--font-baseline-heading-x6: 1.25rem;
+
+	--font-baseline-subtitle: 1.75rem;
+	--font-baseline-body-lg: 1.75rem;
+	--font-baseline-body: 1.5rem;
+	--font-baseline-body-sm: 1.125rem;
+	--font-baseline-label-lg: 1.25rem;
+	--font-baseline-label: 1.25rem;
+	--font-baseline-label-sm: 1rem;
+	--font-baseline-caption: 0.875rem;
+
+	/* // Scale in size 8 point: 4, 8, 16, 24, 32, 40, 48, 56, 64, 72, 80 - // */
+	--scale-xxextra: 80px;
+	--scale-xxextra: 72px;
+	--scale-extra: 64px;
+	--scale-xxbig: 56px;
+	--scale-xbig: 48px;
+	--scale-big: 40px;
+	--scale-xxlarge: 32px;
+	--scale-xlarge: 24px;
+	--scale-large: 16px;
+	--scale-medium: 8px;
+	--scale-small: 4px;
+	--scale-xsmall: 2px;
+	--scale-xxsmall: 1px;
+	--scale-none: 0px;
+
+	--size-0-x: 0px;
+	--size-1-x: 1px;
+	--size-2-x: 2px;
+	--size-3-x: 4px;
+	--size-4-x: 8px;
+	--size-5-x: 16px;
+	--size-6-x: 24px;
+	--size-7-x: 32px;
+	--size-8-x: 40px;
+	--size-9-x: 48px;
+	--size-10-x: 56px;
+	--size-11-x: 64px;
+	--size-12-x: 72px;
+	--size-13-x: 80px;
+	--size-14-x: 96px;
+	--size-15-x: 102px;
+
+	--spacing-0-x: 0px;
+	--spacing-1-x: 1px;
+	--spacing-2-x: 0.125rem;
+	--spacing-3-x: 0.25rem;
+	--spacing-4-x: 0.5rem;
+	--spacing-5-x: 1rem;
+	--spacing-6-x: 1.5rem;
+	--spacing-7-x: 2rem;
+	--spacing-8-x: 2.5rem;
+	--spacing-9-x: 3rem;
+	--spacing-10-x: 3.5rem;
+	--spacing-11-x: 4rem;
+	--spacing-12-x: 4.5rem;
+	--spacing-13-x: 5rem;
+	--spacing-14-x: 6rem;
+	--spacing-15-x: 6.5rem;
+
+	/* // Scale in Radius -------------------------------------------------- // */
+	--radius-xxbig: var(--scale-xxbig);
+	--radius-xbig: var(--scale-xbig);
+	--radius-big: var(--scale-big);
+	--radius-xxlarge: var(--scale-xxlarge);
+	--radius-xlarge: var(--scale-xlarge);
+	--radius-large: var(--scale-large);
+	--radius-medium: var(--scale-medium);
+	--radius-small: var(--scale-small);
+	--radius-xsmall: var(--scale-xsmall);
+	--radius-xxsmall: var(--scale-xxsmall);
+	--radius-none: 0px;
+
+	/* // Style in border -------------------------------------------------- // */
+	--border-solid: solid;
+	--border-dashed: dashed;
+
+	/* // Width in border -------------------------------------------------- // */
+	--border-light: 1px;
+	--border-bold: 2px;
+	--border-extra: 3px;
+
+	/* //Theme Colors ------------------------------------------------------ // */
+	--color-brand-primary: #404eed;
+	--color-brand-secondary: #343a40;
+
+	/* // Base Colors ------------------------------------------------------ // */
+	--color-principal-dark: #323232;
+	--color-principal-light: #ffffff;
+	--color-principal-foreground: #f9f9f9;
+
+	/* // Primary ---------------------------------------------------------- // */
+	--color-primary-gradient: linear-gradient(270deg, #404eed 0%, #000133 100%);
+	--color-primary-1: #8b96ff;
+	--color-primary-2: #5e6cff;
+	--color-primary-3: #404eed;
+	--color-primary-4: #1a28bb;
+	--color-primary-5: #000133;
+
+	/* // Secondary -------------------------------------------------------- // */
+	--color-secondary-gradient: linear-gradient(270deg, #3ba55d 0%, #012c0f 100%);
+	--color-secondary-1: #93e6ae;
+	--color-secondary-2: #62ca84;
+	--color-secondary-3: #3ba55d;
+	--color-secondary-4: #1e8640;
+	--color-secondary-5: #012c0f;
+
+	/* // Tertiary -------------------------------------------------------- // */
+	--color-tertiary-gradient: linear-gradient(270deg, #314044 0%, #080e10 100%);
+	--color-tertiary-1: #d4dadc;
+	--color-tertiary-2: #818e92;
+	--color-tertiary-3: #314044;
+	--color-tertiary-4: #1b282c;
+	--color-tertiary-5: #080e10;
+
+	/* // Neutral Colors -------------------------------------------------- // */
+	--color-neutral-gradient: linear-gradient(270deg, #777777 0%, #333333 100%);
+	--color-neutral-1: #333333;
+	--color-neutral-2: #666666;
+	--color-neutral-3: #777777;
+	--color-neutral-4: #999999;
+	--color-neutral-5: #cccccc;
+	--color-neutral-6: #e9e9e9;
+
+	/* // Semantic Colors ------------------------------------------------- // */
+
+	/* // Informative ----------------------------------------------------- // */
+	--color-feedback-informative-gradient: linear-gradient(
+		270deg,
+		#3f8ed6 0%,
+		#001d33 100%
+	);
+	--color-feedback-informative-1: #8ecbff;
+	--color-feedback-informative-2: #60adf3;
+	--color-feedback-informative-3: #3f8ed6;
+	--color-feedback-informative-4: #1c69af;
+	--color-feedback-informative-5: #001d33;
+
+	/* // Negative -------------------------------------------------------- // */
+	--color-feedback-negative-gradient: linear-gradient(
+		270deg,
+		#ff2e00 0%,
+		#b21e00 100%
+	);
+	--color-feedback-negative-1: #f3b8b3;
+	--color-feedback-negative-2: #ec8a82;
+	--color-feedback-negative-3: #e45b50;
+	--color-feedback-negative-4: #a34139;
+	--color-feedback-negative-5: #220e0c;
+
+	/* // Notice ---------------------------------------------------------- // */
+	--color-feedback-warning-gradient: linear-gradient(270deg,#f1b135 0%,#241b08 100%);
+	--color-feedback-warning-1: #f9dda8;
+	--color-feedback-warning-2: #f5c76e;
+	--color-feedback-warning-3: #f1b135;
+	--color-feedback-warning-4: #ad7f26;
+	--color-feedback-warning-5: #241b08;
+
+	/* // Positive ------------------------------------------------------- // */
+	--color-feedback-positive-gradient: linear-gradient(
+		270deg,
+		#00ff0a 0%,
+		#00b206 100%
+	);
+	--color-feedback-positive-1: #bad6a4;
+	--color-feedback-positive-2: #8dbc69;
+	--color-feedback-positive-3: #22ff33;
+	--color-feedback-positive-4: #457321;
+	--color-feedback-positive-5: #0e1807;
+
+	/* // Width Main */
+	--width-fullscreen: 100%;
+	--width-medium: 1280px;
+	--width-small: 968px;
+	--width-main: 968px;
+}
