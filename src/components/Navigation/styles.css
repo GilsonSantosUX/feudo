@@ -1,0 +1,11 @@
+nav{
+    position: sticky;
+    top:0;
+    display:flex;
+    flex-flow:column nowrap;
+    gap:var(--size-6);
+    max-width:280px;
+    height:100%;
+    border-right:1px var(--color-neutral-2) solid;
+    padding:var(--size-8) var(--size-6);
+}

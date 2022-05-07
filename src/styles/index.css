@@ -35,14 +35,14 @@
 
 html,
 body {
-	width: var(--width-fullscreen);
-	height: 100%;
+	width: 100%;
+	height:100vh;
 	margin: 0;
 	padding: 0;
 	display: flex;
+	overflow-y: hidden;
 	flex-direction: row;
 	justify-content: flex-start;
-	align-items: center;
 
 	font-family: var(--font-accent);
 	color: var(--color-principal-dark);
@@ -53,14 +53,25 @@ body {
 body {
 	/* background-image: radial-gradient(#dadada 1px, #fff 1px);
 	background-size: var(--scale-large) var(--scale-large); */
-  background:var(--color-neutral-1);
+  background: var(--color-neutral-1);
 }
 
-#root {
-	width: var(--width-fullscreen);
+#root, #root>div{
+	width: 100%;
 	height: 100%;
 	margin: 0;
 	padding: 0;
 	display: flex;
 	flex-flow:row nowrap;
+}
+
+main{
+    display:flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    width:100%;
+	height:100%;
+	padding:var(--size-5) var(--size-8);
 }

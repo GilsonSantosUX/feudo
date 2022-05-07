@@ -1,16 +1,18 @@
-import { useState } from 'react'
-import logo from './assets/logo.svg'
-import './styles/styles.css'
+import { useTheme } from '@nextui-org/react'
+
+
+// Import Components
+import Home from './pages/Home'
+import Navigation from './components/Navigation'
+
 
 function App() {
-  const [count, setCount] = useState(0)
+  const { theme } = useTheme();
 
   return (
     <>
-      <img src={logo} className="App-logo" alt="logo" />
-      <button type="button" onClick={() => setCount((count) => count + 1)}>
-            count is: {count}
-      </button>
+    <Navigation/>
+    <Home/>
     </>
   )
 }

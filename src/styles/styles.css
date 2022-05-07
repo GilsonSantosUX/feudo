@@ -57,22 +57,22 @@
 	--scale-xxsmall: 1px;
 	--scale-none: 0px;
 
-	--size-0-x: 0px;
-	--size-1-x: 1px;
-	--size-2-x: 2px;
-	--size-3-x: 4px;
-	--size-4-x: 8px;
-	--size-5-x: 16px;
-	--size-6-x: 24px;
-	--size-7-x: 32px;
-	--size-8-x: 40px;
-	--size-9-x: 48px;
-	--size-10-x: 56px;
-	--size-11-x: 64px;
-	--size-12-x: 72px;
-	--size-13-x: 80px;
-	--size-14-x: 96px;
-	--size-15-x: 102px;
+	--size-0: 0px;
+	--size-1: 1px;
+	--size-2: 2px;
+	--size-3: 4px;
+	--size-4: 8px;
+	--size-5: 16px;
+	--size-6: 24px;
+	--size-7: 32px;
+	--size-8: 40px;
+	--size-9: 48px;
+	--size-10: 56px;
+	--size-11: 64px;
+	--size-12: 72px;
+	--size-13: 80px;
+	--size-14: 96px;
+	--size-15: 102px;
 
 	--spacing-0-x: 0px;
 	--spacing-1-x: 1px;

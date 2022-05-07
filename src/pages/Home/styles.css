@@ -1,0 +1,36 @@
+main,.heading,.list-characters,.pagination{
+    display:flex;
+    height:auto;
+}
+
+main,section{
+    width:100%;
+    height:100%;
+}
+
+main{
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap:var(--size-6);
+    overflow-y: auto;
+}
+
+section.heading{
+    flex-flow: column nowrap;
+    gap:var(--size-4);
+    height:auto;
+}
+
+section.list-characters{
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    gap:var(--size-5);
+}
+
+section.pagination{
+    height:auto;
+    gap:var(--size-4);
+    align-items: center;
+}
