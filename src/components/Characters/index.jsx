@@ -18,29 +18,14 @@ function Characters(props) {
                     <img src={props.url} alt={props.name} loading="lazy"/>
                 </div>
                 <div className="card-body">
-                    <Text color="dark">{props.name}</Text>
+                    <Text color="dark" h3>{props.name}</Text>
                     <Text color="dark">{props.description}</Text>
-                    {/* <Text color="dark">Powers</Text>
-                    <ul className="list-powers">
-                        <li>
-                            <Text color="dark">Powers 1</Text>
-                        </li>
-                        <li>
-                            <Text color="dark">Powers 2</Text>
-                        </li>
-                        <li>
-                            <Text color="dark">Powers 3</Text>
-                        </li>
-                        <li>
-                            <Text color="dark">Powers 4</Text>
-                        </li>
-                    </ul> */}
                 </div>
                 <div className="card-footer">
-                    <Button onClick={()=>{
+                    {/* <Button onClick={()=>{
                         // window.location.href = props.URI
                         alert(props.URI);
-                    }}>Ver detalhes</Button>
+                    }}>Ver detalhes</Button> */}
                 </div>
                 
             </div>

@@ -9,7 +9,7 @@
 }
 
 .card-character:hover{
-    border-radius: 0;
+    border:var(--size-3) solid var(--color-primary-3);
     background:var(--color-neutral-5);
 }
 
