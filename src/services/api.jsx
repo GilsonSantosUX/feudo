@@ -12,8 +12,8 @@ export async function getCharacters(offset){
     return await fetch(`${baseURL}${heros}?ts=${time}&apikey=${publicKey}&hash=${hash}${offset?'&offset='+offset:''}`).then(data=>data.json()).catch(err=>console.log(err))
 }
 
-export async function getCharacter(URI){
-    return await fetch(`${URI}?ts=${time}&apikey=${publicKey}&hash=${hash}`).then(data=>data.json()).catch(err=>console.log(err))
+export async function getCharacter(ID){
+    return await fetch(`${baseURL}${heros}/${ID}?ts=${time}&apikey=${publicKey}&hash=${hash}`).then(data=>data.json()).catch(err=>console.log(err))
 }
 
 export async function searchCharacter(name){

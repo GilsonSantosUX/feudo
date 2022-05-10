@@ -9,6 +9,7 @@ main,section{
 }
 
 main{
+    position: relative;
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
@@ -37,4 +38,11 @@ section.pagination{
     gap:var(--size-4);
     align-items: center;
     padding-bottom:var(--size-8);
+}
+
+section>.loading{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

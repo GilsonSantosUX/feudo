@@ -1,0 +1,116 @@
+
+.modal-overlay,.modal>.modal-heading,.modal-heading>.details,.modal-footer,.modal-heading>.details>span{
+    display: flex;
+}
+
+.modal-heading,.modal-heading>.details,.modal-footer{
+    width:100%;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.modal-heading{
+    flex:auto;
+    pointer-events: all;
+}
+
+.modal-heading>img{
+    width:320px;
+    flex: 1;
+    height:100%;
+    object-fit: cover;
+}
+
+.modal-heading>.details{
+    width:100%;
+    padding:var(--size-6);
+    flex: 1;
+    flex-flow: column nowrap;
+    gap:var(--size-3);
+}
+
+.modal-heading>.details>span{
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap:var(--size-3);
+}
+
+.modal-heading>span{
+    padding:var(--size-6);
+    cursor:pointer;
+}
+
+
+.modal-overlay{
+    width:100%;
+    height:100%;
+    justify-content: center;
+    align-items: center;
+    background:rgba(0,0,0, .5);
+
+    position: fixed;
+    top: 0;
+    left:72px;
+    z-index: 9;
+    pointer-events: all;
+}
+
+.modal{
+    width:800px;
+    max-height:600px;
+    overflow: hidden;
+    border-radius: var(--size-5);
+    background: var(--color-neutral-1);
+    flex-flow: column nowrap;
+    pointer-events: none;
+}
+
+.modal-overlay::backdrop {
+  background: rgb(0 0 0 / .5);
+}
+
+.modal>.modal-footer{
+    height:100%;
+    border-top:var(--size-1) solid var(--color-neutral-3);
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    gap:var(--size-5);
+    align-items: stretch;
+}
+.modal>.modal-footer>.category{
+    flex: 1;
+    display:flex;
+    flex-flow: column nowrap;
+    gap:var(--size-4);
+    padding:var(--size-6);
+    width:100%;
+    height:100%;
+    justify-content: space-around;
+    align-items: stretch;
+    border-right:var(--size-1) solid var(--color-neutral-3);
+}
+
+.modal>.modal-footer>.category>ol{
+    width:100%;
+    height:100%;
+    flex: 1;
+    display:flex;
+    padding:0;
+    margin:0;
+    flex-flow: row wrap;
+    gap:var(--size-3);
+}
+
+.modal>.modal-footer>.category:last-child{
+    border:none;
+}
+
+.badge{
+    padding:var(--size-3);
+    background:var(--color-principal-light);
+    color:var(--color-principal-dark);
+    font-size: 10px;
+    font-weight:bold;
+}
